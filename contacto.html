@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="Asesorías, consultorías, gestión de proyectos">
+	<meta name="description" content="Gemprolider SAS - Asesorías, Consultorías y Gestión de Proyectos.">
+	<meta name="author" content="Marcos M.A.">
+	<link rel="icon" href="img\favicon.ico">
+	<title>Gemprolider SAS: Contáctanos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+ crossorigin="anonymous">
+	<link rel="stylesheet" href="css\gemprolider.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
+</head>
+
+<!-- ....::::NAVBAR::::.... -->
+
+<body>
+	<div class="navbar-wrapper">
+		<div class="container">
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-brand">
+							<span><img src="img\Logo_Gemprolider_small_48x87.png" alt="Gemprolider Logo" width="26" height="48"></span>
+							<a href="index.html" style="font-family: 'Fjalla One', sans-serif">emprolider</a>
+						</div>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html">INICIO</a></li>
+							<li><a href="nosotros.html">NOSOTROS</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICIOS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="asesorias.html">Asesorías</a></li>
+									<li><a href="auditorias.html">Auditorias</a></li>
+									<li><a href="gestion.html">Gestión de Proyectos</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="contacto.html">CONTÁCTO</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+		<div id="container-encabezado" class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="contacto.html">Contáctanos</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!--....::::MAPA::::....-->
+
+	<div class="container">
+		<div class="col-lg-8">
+			<div id="googleMap" style="height:400px;width:100%;"></div>
+		</div>
+		<div class="col-lg-4">
+			<h3 id="titulo2" class="page-header">Detalles de Contácto</h3>
+			<p><i id="mygliphs" class="glyphicon glyphicon-map-marker"></i> Cra 23 N° 19–21 Barrio 07 de Agosto Edificio Mónaco</p>
+			<p><i id="mygliphs" class="glyphicon glyphicon-earphone"></i> 2786799 – 3002821438</p>
+			<p><i id="mygliphs" class="glyphicon glyphicon-envelope"></i> gemprolider@gmail.com</p>
+		</div>
+	</div>
+
+<!--....::::Formulario::::....-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<h2 id="titulo2" class="page-header">Formulario De Contácto</h2>
+				<h4>Escríbenos y nos pondremos en contácto con usted lo más pronto posible.</h4>
+				<form name="sentMessage" id="contactForm" novalidate>
+					<div class="control-group form-group">
+						<div class="controls">
+							<label>*Nombre:</label>
+							<input type="text" class="form-control" id="name" required data-validation-required-message="Por favor ingrese su nombre" placeholder="Ingrese su nombre completo">
+						</div>
+					</div>
+					<div class="control-group form-group">
+						<div class="controls">
+							<label>*Email:</label>
+							<input type="email" class="form-control" id="email" required data-validation-required-message="Por favor ingrese su dirección de correo electrónico" placeholder="Ingrese su dirección de correo electrónico">
+						</div>
+					</div>
+					<div class="control-group form-group">
+						<div class="controls">
+							<label>*Teléfono:</label>
+							<input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor ingrese su número de teléfono" placeholder="Ingrese su número de teléfono">
+						</div>
+					</div>
+					<div class="control-group form-group">
+						<div class="controls">
+							<label>*Mensaje:</label>
+							<textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor ingrese su mensaje" maxlength="999" style="resize: none;" placeholder="Ingrese su mensaje"></textarea>
+						</div>
+					</div>
+					<div id="success"></div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<hr>
+				<a class="pull-right" href="#" title="Ir Arriba">
+					<span class="glyphicon glyphicon-chevron-up"></span>
+				</a>
+				<p>Copyright &copy; 2017 Gemprolider SAS</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB06qV2qIms6S-fIPhUcGU5nGlT2dXtZUw&callback=initialize"></script>
+
+<script>
+	var myCenter = new google.maps.LatLng(9.304771, -75.392447);
+
+	function initialize() {
+		var mapProp = {
+			center: myCenter, zoom: 15, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+
+		var map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
+
+		var marker = new google.maps.Marker({ position: myCenter });
+
+		marker.setMap(map);
+		google.maps.event.addDomListener(marker, 'click', function () {
+			var pos = map.getZoom();
+			map.setZoom(18);
+			map.setCenter(marker.getPosition());
+			window.setTimeout(function () { map.setZoom(pos); }, 6000);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+
+		<script src="js/jqBootstrapValidation.js"></script>
+		<script src="js/contact_me.js"></script>
+
+</body>
+</html>
