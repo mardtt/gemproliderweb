@@ -3,10 +3,9 @@
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
-   empty($_POST['message'])   ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-   echo "No se han proporcionado argumentos!";
+   echo "Faltan argumentos!";
    return false;
    }
    
@@ -16,7 +15,7 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Crear el email y envíar el mensaje
-$to = 'mrdtma@gmail.com'; // Email al que se le enviaran los mensajes del formulario
+$to = 'gemprolider@gmail.com'; // Email al que se le enviaran los mensajes del formulario
 $email_subject = "Formulario de Contacto de la Web:  $name";
 $email_body = "Haz recibido un nuevo mensaje de tu formulario de contacto Web.\n\n"."Aquí están los detalles:\n\nNombre: $name\n\nEmail: $email_address\n\nTélefono: $phone\n\nMensaje:\n$message";
 $headers = "De: noreply@yourdomain.com\n"; // Este el email que aparecera como enviado en el contenido del mensaje - Se recomienda utilizar un correo como: noreply@eldominio.com.
